@@ -1,0 +1,77 @@
+<!-- ********************************************************************* -->
+<!-- WE ARE USING TWO CSS FRAMEWORKS IN THIS APP, FROM MATERIALIZE AND PURE CSS, WITH PURE CSS BEING THE DOMINANT ONE -->
+<!-- MATERILIZE CDN IS PLACED BEFORE CSS FILES FROM PURE CSS DUE TO CSS CASCADING ORDER, THE RULES FROM THE LATTER FILE WILL OVERWRITE THE FORMER ONE -->
+<!-- ********************************************************************* -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Don't Eat Alone</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ********************************************************************* -->
+    <!--Import jQuery before materialize.js-->
+    <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+
+    <!-- CSS files -->
+    <!-- Our CSS file, this includes PURE CSS file for the request management portal -->
+    <link rel="stylesheet" href="../../app/public/css/style.css" type="text/css" />
+    <!-- Template CSS file, this includes Base CSS file for the general template-->
+    <link rel="stylesheet" href="../../app/public/css/styles.css" type="text/css" />
+
+</head>
+
+<body>
+
+  {{#if user}}
+  <a href="/signout">Sign Out</a>
+  {{/if}}
+
+  <!-- ============ -->
+  <!-- static header -->
+  <!-- ============ -->
+
+  {{!-- <div class="grey-row" style="background-color:#f26c39">
+      <div class="register-block pad-top-5 pad-bottom-5 container text-center" style="float:left">
+          <h2 class="uppercase" style="color:white">Don't Eat Alone</h2>
+      </div>
+      {{#if user}}
+      <div class="register-block pad-top-5 pad-bottom-5 container text-center" style="float:right">
+          <h4 class="uppercase" style="color:white">
+            Signed in as {{user}}. <a id="sign-out" href="/signout">Sign Out</a>
+          </h4>
+      </div>
+
+      {{else}}
+      <div class="register-block pad-top-5 pad-bottom-5 container text-center" style="float:right">
+          <h4 class="uppercase" style="color:white">
+            You are not signed in.<a id="sign-in" href="/sign-in">Sign In</a>
+          </h4>
+      </div>
+      {{/if}}
+  </div> --}}
+
+
+<!-- Dynamically ADD CONTENT HERE using handlebars -->
+{{{ body }}}
+
+    <!-- ============ -->
+    <!-- body footer -->
+    <!-- ============ -->
+
+        <div class="footer-copyright">
+            <div class="container">
+                <p>
+                    @ Copyright 2017 Uyen Lam, Tyler Yonke, Chad Chaney
+                </p>
+            </div>
+        </div>
+        <!-- footer-copyright -->
+
+    <!-- footer-block -->
+
+</body>
+
+</html>

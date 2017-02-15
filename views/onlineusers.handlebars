@@ -1,0 +1,47 @@
+<!-- populate user information -->
+<div id="layout" class="pure-g container" style="margin: 0px">
+	<div id="list" class="col-2-l pure-u-1">
+      <div id="profile-card">
+			<!-- user information card at top left of the page -->
+
+	        <div class="email-item email-item-selected pure-g">
+	            <div class="pure-u">
+
+                  <!-- unbound is possible using ember.js handlerbars helper -->
+	                <img width="64" height="64" class="email-avatar" src="{{user.photolink}}">
+
+              </div>
+
+	            <div class="pure-u-3-4">
+	                <h5 class="email-name">{{user.displayname}}</h5>
+	                </p>
+	            </div>
+	        </div>
+
+        </div>
+  </div>
+
+	<div id="main" class="col-9-l pure-u-1 banner">
+
+						{{#each onlineusers}}
+
+  						<ul>
+  	              <li class="col-6-m col-3-l">
+  	                  <div class="col-12-m no-float">
+                              <!-- unbound is possible using ember.js handlerbars helper -->
+  	                          <img width="100px" height="100px" class="block" src="{{this.photolink}}">
+  	                      <h3 class="uppercase fs-4 pad-top-20">{{this.name}}</h3>
+  	                      <p>
+  	                          {{this.username}}
+  	                      </p>
+                          <p>
+                              {{this.locationName}}
+                          </p>
+  	                  </div>
+  	              </li>
+  	          </ul>
+
+						{{/each}}
+			</div>
+	</div>
+</div>

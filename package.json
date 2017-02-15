@@ -1,0 +1,31 @@
+{
+  "name": "dont-eat-alone",
+  "version": "1.0.0",
+  "description": "social eating app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tyleryonke/dont-eat-alone.git"
+  },
+  "author": "tyler, uyen, chad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tyleryonke/dont-eat-alone/issues"
+  },
+  "homepage": "https://github.com/tyleryonke/dont-eat-alone#readme",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.16.1",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.14.1",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.15.1",
+    "method-override": "^2.3.7",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "sequelize": "^3.30.2"
+  }
+}

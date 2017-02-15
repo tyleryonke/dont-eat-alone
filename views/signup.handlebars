@@ -1,0 +1,7 @@
+<h3>Sign Up</h3>
+<form method="post" action="/signup">
+  <input name="username" type="text" placeholder="Username" required oninvalid="this.setCustomValidity('Please enter a username')">
+  <input name="password" type="password" placeholder="Password" required oninvalid="this.setCustomValidity('Please enter a password')">
+  <input name="photolink" type="text" placeholder="Link to your profile image" required oninvalid="this.setCustomValidity('Please enter a valid link')">
+  <button id="sign-up-btn" type="submit">Sign up</button>
+</form>
