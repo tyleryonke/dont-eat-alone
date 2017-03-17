@@ -9,6 +9,7 @@ var db = require('./app/config/db');
 var User = require("./app/models/user")(db);
 var exphbs = require("express-handlebars");
 var sequelize = require("sequelize");
+var port = process.env.PORT || 3000;
 
 app.use(methodOverride("_method"));
 app.use(express.static("public"));
@@ -207,6 +208,6 @@ app.get("/onlineusers", function(req, res) {
 });
 
 
-app.listen(3000, function() {
-  console.log("Listening on port 3000")
+app.listen(port, function() {
+  console.log("Listening...")
 });
