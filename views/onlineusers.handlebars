@@ -25,8 +25,8 @@
 
 						{{#each onlineusers}}
 
-  						<ul>
-  	              <li class="col-6-m col-3-l">
+
+
   	                  <div class="col-12-m no-float">
                               <!-- unbound is possible using ember.js handlerbars helper -->
   	                          <img width="100px" height="100px" class="block" src="{{this.photolink}}">
@@ -35,11 +35,13 @@
   	                          {{this.username}}
   	                      </p>
                           <p>
+                              is at
+                          </p>
+                          <p>
                               {{this.locationName}}
                           </p>
   	                  </div>
-  	              </li>
-  	          </ul>
+
 
 						{{/each}}
 			</div>
